@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Generic Social Media App</title>
+
+    <!-- This line provides automatic page and style reloading when files change -->
+    <script type="module" src="/lib/client/updater.js"></script>
+
+    <link rel="stylesheet" href="css/index.css">
+    <script type="module" src="js/index.js"></script>
+  </head>
+  <body>
+    <header id="header">
+      <div class="widthContainer">
+        <h1 class="brand">Generic Social Media App</h1>
+        <form id="loginForm">
+          <input name="userid" placeholder="User ID">
+          <button type="submit" name="login">Login</button>
+          <button type="button" name="listUsers" class="secondary">List Users</button>
+        </form>
+      </div>
+    </header>
+
+    <main id="welcome">
+      <div class="paper">
+        <h1>Welcome to <strong class="brand">Generic Social Media App</strong>!</h1>
+        <h2>Log in to view your feed.</h2>
+      </div>
+    </main>
+
+    <main id="main" class="hidden">
+      <div class="widthContainer">
+        <section id="feedPanel">
+          <form id="postForm" class="post paper">
+            <img class="avatar" src="images/default.png" alt="Your avatar">
+            <div>
+              <div class="postHeader">
+                <span class="author">
+                  <strong class="name"></strong>
+                  <img class="verified" src="images/verified.svg" alt="Verified">
+                  (<span class="userid"></span>)
+                </span>
+              </div>
+              <div class="text">
+                <textarea id="newPost" placeholder="What's happening?"></textarea>
+                <button type="submit" id="postButton">Post</button>
+              </div>
+            </div>
+          </form>
+
+          <div id="templatePost" class="post paper">
+            <img class="avatar" src="images/default.png" alt="">
+            <div>
+              <div class="postHeader">
+                <span class="author">
+                  <strong class="name"></strong>
+                  <img class="verified" src="images/verified.svg" alt="Verified">
+                  (<span class="userid"></span>)
+                </span>
+                <span class="time"></span>
+              </div>
+              <div class="text"></div>
+            </div>
+          </div>
+
+          <div id="feed"></div>
+        </section>
+
+        <section id="sidebar">
+          <section id="editPanel" class="paper">
+            <h2>Edit Profile</h2>
+            <div class="editItem">
+              <label>User ID:</label>
+              <div id="idContainer"></div>
+            </div>
+            <form class="editItem" id="nameForm">
+              <label for="nameInput">Display Name:</label>
+              <div class="inputLine">
+                <input name="name" id="nameInput">
+                <button name="submit" id="nameSubmit"><img src="images/save.svg" alt="Save"></button>
+              </div>
+            </form>
+            <form class="editItem" id="avatarForm">
+              <label for="avatarInput">Avatar URL:</label>
+              <div class="inputLine">
+                <input name="avatar" id="avatarInput">
+                <button name="submit" id="avatarSubmit"><img src="images/save.svg" alt="Save"></button>
+              </div>
+            </form>
+          </section>
+
+          <section id="followPanel" class="paper">
+            <h2>Following:</h2>
+            <div id="followContainer"></div>
+          </section>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>

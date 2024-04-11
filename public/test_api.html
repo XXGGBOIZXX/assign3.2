@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>API Tester | Assignment 3.2</title>
+
+    <!-- This line provides automatic page and style reloading when files change -->
+    <script type="module" src="/lib/client/updater.js"></script>
+
+    <link rel="stylesheet" href="css/test_api.css">
+    <script type="module" src="js/test_api.js"></script>
+  </head>
+  <body>
+    <h1>API Tester</h1>
+    <form id="apiForm">
+      <div class="sidebyside">
+        <div class="controls">
+          <label>Endpoint: <select name="endpoint" id="endpoint" required>
+            <option></option>
+            <option>GET /users</option>
+            <option>GET /users/:id</option>
+            <option>POST /users</option>
+            <option>PATCH /users/:id</option>
+            <option>GET /users/:id/feed</option>
+            <option>POST /users/:id/posts</option>
+            <option>POST /users/:id/follow</option>
+            <option>DELETE /users/:id/follow</option>
+          </select></label><br>
+          <label id="idParam" class="hidden">ID: <input name="userid"></label><br>
+          <label id="targetParam" class="hidden">Target: <input name="target"></label><br>
+        </div>
+        <div id="bodyContainer" class="hidden">
+          <label>Body:<br>
+            <textarea id="reqBody" name="body" placeholder="JSON string, or blank for no body"></textarea>
+          </label><br>
+        </div>
+      </div>
+      <button type="submit">Send</button>
+
+      <div class="sidebyside responses">
+        <div>
+          <label><input type="checkbox" name="local" checked> Local API (assign3.2)</label><br>
+          <textarea class="response" name="resLocal"></textarea>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>

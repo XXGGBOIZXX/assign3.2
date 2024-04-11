@@ -1,0 +1,21 @@
+.followList {
+  list-style: none;
+  padding-left: 1rem;
+}
+
+.followList .remove {
+  background-color: transparent;
+  border: none;
+  color: darkred;
+  margin-left: 1rem;
+  padding: 0;
+}
+
+.followForm {
+  display: flex;
+  gap: 1rem;
+}
+
+.followForm input {
+  flex-grow: 1;
+}

@@ -1,0 +1,39 @@
+[{
+  "_id": {
+    "$oid": "660a7366eded6d0686b42831"
+  },
+  "id": "mchang",
+  "name": "Michael",
+  "avatarURL": "images/stanford.png",
+  "following": []
+},
+{
+  "_id": {
+    "$oid": "660a738ceded6d0686b42833"
+  },
+  "id": "lmoa",
+  "name": "lam mao",
+  "avatarURL": "images/profile_blue.png",
+  "following": [
+    "mchang",
+    "kashif"
+  ]
+},
+{
+  "_id": {
+    "$oid": "660a8a083f0f3849bbbbf442"
+  },
+  "id": "kashif",
+  "name": "kashif",
+  "avatarURL": "images/default.png",
+  "following": []
+},
+{
+  "_id": {
+    "$oid": "660b349c4ddd5ca893e7928e"
+  },
+  "id": "lm",
+  "name": "lm",
+  "avatarURL": "images/default.png",
+  "following": []
+}]

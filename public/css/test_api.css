@@ -1,0 +1,47 @@
+body {
+  margin: 2rem;
+}
+
+input, textarea {
+  font-size: 1rem;
+  min-width: 0;
+}
+
+.sidebyside {
+  display: flex;
+  gap: 1rem;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.controls label {
+  display: flex;
+  gap: 1rem;
+}
+
+.controls input, .controls select {
+  flex-grow: 1;
+}
+
+#reqBody {
+  width: 25em;
+  height: 5em;
+}
+
+.responses {
+  margin-top: 2rem;
+}
+
+.response {
+  width: 30em;
+  height: 20em;
+}
+
+.hidden, label.hidden {
+  display: none;
+}
+

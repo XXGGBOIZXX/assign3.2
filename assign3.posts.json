@@ -1,0 +1,40 @@
+[{
+  "_id": {
+    "$oid": "660a7445eded6d0686b42838"
+  },
+  "time": {
+    "$date": "2024-03-08T02:51:12.431Z"
+  },
+  "text": "My new post",
+  "userId": "kashif"
+},
+{
+  "_id": {
+    "$oid": "660a7459eded6d0686b4283a"
+  },
+  "time": {
+    "$date": "2024-03-07T19:32:52.063Z"
+  },
+  "text": "Welcome to the Generic Social Media App!",
+  "userId": "mchang"
+},
+{
+  "_id": {
+    "$oid": "660a8a7a3f0f3849bbbbf443"
+  },
+  "time": {
+    "$date": "2024-04-01T10:20:42.060Z"
+  },
+  "text": "test post",
+  "userId": "lmoa"
+},
+{
+  "_id": {
+    "$oid": "660b28f110c20aa1195c5dd9"
+  },
+  "userId": "lmoa",
+  "time": {
+    "$date": "2024-04-01T21:36:49.317Z"
+  },
+  "text": "ye boiiiiiiii"
+}]
